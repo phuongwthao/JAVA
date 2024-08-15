@@ -2,6 +2,9 @@ package coreconcepts.Basic;
 
 public class Bai8 {
     public static void main(String[] args) {
+        //Đọc lại chú ý đề bài:
+        //Không được sử dụng Collection (List, ArrayList, Map, Set, ...), chỉ được sử dụng mảng (int[],
+        //float [], ...) để thể hiện danh sách.
 //        for(int i=100; i<=999; i++){
 //            String tmp = String.valueOf(i);
 //            String j = new StringBuilder(tmp).reverse().toString();

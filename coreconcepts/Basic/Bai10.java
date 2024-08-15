@@ -1,6 +1,9 @@
 package coreconcepts.Basic;
 
 public class Bai10 {
+    //Đọc lại chú ý đề bài:
+    //Không được sử dụng Collection (List, ArrayList, Map, Set, ...), chỉ được sử dụng mảng (int[],
+    //float [], ...) để thể hiện danh sách.
     public static boolean prime(int n){
         if(n<2) return false;
         for(int i=2; i*i<=n;i++){

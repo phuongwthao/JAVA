@@ -15,6 +15,6 @@ public class Bai3 {
         int b = sc.nextInt();
         int c = gcd(a,b);
         System.out.println("Uoc chung lon nhat cua hai so la " +c );
-        System.out.println("Boi chung lon nhat cua hai so la "+(a*b)/c);
+        System.out.println("Boi chung nhỏ nhat cua hai so la "+(a*b)/c);
     }
 }

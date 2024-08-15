@@ -1,6 +1,9 @@
 package coreconcepts.Basic;
 
 public class Bai7 {
+    //Đọc lại chú ý đề bài:
+    //Không được sử dụng Collection (List, ArrayList, Map, Set, ...), chỉ được sử dụng mảng (int[],
+    //float [], ...) để thể hiện danh sách.
     public static boolean check(int n){
         String s = String.valueOf(n);
 

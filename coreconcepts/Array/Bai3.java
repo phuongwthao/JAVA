@@ -7,7 +7,7 @@ public class Bai3 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[n];
-        int[] cnt = new int[99999999];
+        int[] cnt = new int[99999999]; //Không nên fix cứng giá trị ntn
         for(int i=0; i<n; i++){
             arr[i]= sc.nextInt();
             cnt[arr[i]]++;

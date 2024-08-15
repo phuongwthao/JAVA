@@ -13,7 +13,7 @@ public class Bai6 {
             a[i]= sc.nextInt();
         }
         int x = sc.nextInt();
-        Arrays.sort(a);
+        Arrays.sort(a);//Viết hàm không dùng Collection
         if(x>a[n-1]){
             for(int i:a){
                 System.out.print(i + " ");

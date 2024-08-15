@@ -26,7 +26,7 @@ public class Bai4 {
         for (int i = 0; i < arr.length; i++) {
             if(prime(arr[i])){
                 if(Math.abs(arr[i]-x)<tmp){
-                    tmp = Math.abs(arr[i]-x);
+                    tmp = Math.abs(arr[i]-x); //Viết hàm không dùng Collection
                     ans = i;
                 }
             }

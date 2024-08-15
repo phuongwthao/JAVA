@@ -3,6 +3,9 @@ package coreconcepts.Basic;
 import java.util.Scanner;
 
 public class Bai9 {
+    //Đọc lại chú ý đề bài:
+    //Không được sử dụng Collection (List, ArrayList, Map, Set, ...), chỉ được sử dụng mảng (int[],
+    //float [], ...) để thể hiện danh sách.
     public static boolean check(String n){
         for(int i = 0; i<=n.length()/2;i++){
             if(n.charAt(i)!=n.charAt(n.length()-1-i)){

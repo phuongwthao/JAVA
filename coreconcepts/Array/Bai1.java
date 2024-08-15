@@ -10,7 +10,7 @@ public class Bai1 {
         for(int i=0; i<n; i++){
             arr[i]= sc.nextInt();
         }
-        int ok = 0;
+        int ok = 1; //Chú ý giá trị
         for(int i=0; i<=n/2;i++){
             if(arr[i]!=arr[n-1-i]){
                 ok = 0;
