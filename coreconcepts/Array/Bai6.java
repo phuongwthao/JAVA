@@ -1,0 +1,39 @@
+package coreconcepts.Array;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Bai6 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int[] a = new int[n];
+        for(int i=0; i<n; i++){
+            a[i]= sc.nextInt();
+        }
+        int x = sc.nextInt();
+        Arrays.sort(a);
+        if(x>a[n-1]){
+            for(int i:a){
+                System.out.print(i + " ");
+            }
+            System.out.println(x);
+        }
+
+        for(int i = 0;i<=n-2;i++){
+            if(x>=a[i] && x<=a[i+1]){
+                for (int j=0; j<=i; j++){
+                    System.out.print(a[j] +" ");
+                }
+
+                System.out.print(x + " ");
+
+                for(int j = i+1; j<n;j++){
+                    System.out.print(a[j]+ " ");
+                }
+                break;
+            }
+        }
+    }
+}
