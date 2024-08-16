@@ -28,7 +28,11 @@ public class QLMuonSach {
         for(int i=1; i<=sodausach;i++){
             if(sach.equals(sachs[i])){
                 this.soluongtheodausach[i]+=soluongmuon;
-
+                if(this.soluongtheodausach[i]>3){
+                    this.soluongtheodausach[i]-=soluongmuon;
+                    System.out.println("Moi dau sach khong duoc muon qua 3 cuon");
+                    return;
+                }
                 kt=1;
                 break;
             }
