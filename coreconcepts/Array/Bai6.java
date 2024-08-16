@@ -4,6 +4,18 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Bai6 {
+    public static int[] sort(int[] a){
+        for(int i=0; i<a.length-1;i++){
+            for(int j=i+1; j<a.length;j++){
+                if(a[j]<a[i]){
+                    int tmp = a[i];
+                    a[i]=a[j];
+                    a[j]=tmp;
+                }
+            }
+        }
+        return a;
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -13,7 +25,10 @@ public class Bai6 {
             a[i]= sc.nextInt();
         }
         int x = sc.nextInt();
-        Arrays.sort(a);//Viết hàm không dùng Collection
+        a = sort(a);
+       for(int i:a){
+           System.out.println(i);
+       }
         if(x>a[n-1]){
             for(int i:a){
                 System.out.print(i + " ");

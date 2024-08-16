@@ -7,11 +7,21 @@ public class Bai3 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[n];
-        int[] cnt = new int[99999999]; //Không nên fix cứng giá trị ntn
+       // int[] cnt = new int[99999999]; //Không nên fix cứng giá trị ntn
+
+        int countmax = 0;
         for(int i=0; i<n; i++){
             arr[i]= sc.nextInt();
-            cnt[arr[i]]++;
+            if(arr[i]>countmax){
+                countmax=arr[i];
+            }
+           // cnt[arr[i]]++;
         }
+        int[]cnt = new int[countmax+1];
+        for(int i:arr){
+            cnt[i]++;
+        }
+
         int max = 0;
         int numbermax = arr[0];
         for(int i:arr){

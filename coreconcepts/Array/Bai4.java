@@ -13,6 +13,15 @@ public class Bai4 {
         return true;
 
     }
+    public static int abs(int a,int b){
+        int c = a-b;
+        if(c>0){
+            return c;
+        }
+        else {
+            return -c;
+        }
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -25,8 +34,8 @@ public class Bai4 {
         int tmp = 0;
         for (int i = 0; i < arr.length; i++) {
             if(prime(arr[i])){
-                if(Math.abs(arr[i]-x)<tmp){
-                    tmp = Math.abs(arr[i]-x); //Viết hàm không dùng Collection
+                if(abs(arr[i],x)<tmp){
+                    tmp = abs(arr[i],x); //Viết hàm không dùng Collection
                     ans = i;
                 }
             }
